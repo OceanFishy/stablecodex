@@ -15,16 +15,23 @@ To use Lumache, first install it using pip:
 Creating recipes
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+### MakerDAO v1 {#makerdao-v1}
 
-.. autoexception:: lumache.InvalidKindError
+Any entity may pay off a vault’s debt and receive a proportional amount of collateral plus a bonus known as a liquidation fee (e.g. 10%).
+
+Pros:
+
+
+
+* Simple to build
+
+Cons:
+
+
+
+* Price-inefficient, small liquidators cannot participate as no partial liquidations
 
 For example:
 
